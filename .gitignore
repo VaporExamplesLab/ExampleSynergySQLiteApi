@@ -1,0 +1,10 @@
+.DS_Store
+/.build
+/Packages
+/*.xcodeproj
+
+Package.resolved
+
+###########
+## Hidden SourceTree "Iconr" which is really "Icon\r"
+Icon?
