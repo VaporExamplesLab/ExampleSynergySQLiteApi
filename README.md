@@ -8,7 +8,7 @@
 [Original Setup](#OriginalSetup) •
 [Resources](#Resources)
 
-## API Summary <a id="ApiSummary">[▴](#toc)</a>
+## API Summary <a id="ApiSummary"></a>[▴](#toc)
 
 #### SynergySQLite (Utilities)
 
@@ -82,7 +82,7 @@ func getRowData(rowIdx: Int) -> [Any?]
 
 `SynergySQLiteStatus` provides status and error information.
 
-## Example <a id="Example">[▴](#toc)</a>
+## Example <a id="Example"></a>[▴](#toc)
 
 ``` swift
 ("select * from employees");
@@ -92,7 +92,7 @@ columnType("name"), columnType(index)
 rowCount() // rows
 ```
 
-## Notes <a id="Notes">[▴](#toc)</a>
+## Notes <a id="Notes"></a>[▴](#toc)
 
 Boolean values are inserted and returned as `0` or `1`.
 
@@ -152,7 +152,7 @@ func copyTestResources() {
 copyTestResources()
 ```
 
-## Subproject Usage <a id="SubprojectUsage">[▴](#toc)</a>
+## Subproject Usage <a id="SubprojectUsage"></a>[▴](#toc)
 
 1. Clone Repository
 
@@ -178,7 +178,7 @@ copyTestResources()
     * `+` add to Target Dependencies
     * `+` add to Link Binary With Libraries
 
-## Original Setup <a id="OriginalSetup">[▴](#toc)</a>
+## Original Setup <a id="OriginalSetup"></a>[▴](#toc)
 
 _Steps taken to initial setup this project._
 
@@ -203,7 +203,7 @@ swiftxcode # alias
 open SynergySQLiteFramework.xcodeproj
 ```
 
-## Resources <a id="Resources">[▴](#toc)</a>
+## Resources <a id="Resources"></a>[▴](#toc)
 
 [SQLite: SQL As Understood By SQLite ⇗](https://www.sqlite.org/lang.html)  
 [SQLite: Core Functions ⇗](https://www.sqlite.org/lang_corefunc.html)  
