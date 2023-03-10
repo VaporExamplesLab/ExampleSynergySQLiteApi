@@ -14,14 +14,14 @@ class SynergySQLiteFrameworkTests: XCTestCase {
         print("#################################")
         print(SynergySQLite.getProcessInfo())
         
-        print("\n##############################################")
-        print("### SpmResourcesUtil..getProcessTestInfo() ###")
-        print("##############################################")
-        print(SpmResourcesUtil.getProcessInfo())
+        print("\n#############################################")
+        print("### SpmResourcesUtil__C02.getProcessTestInfo() ###")
+        print("#############################################")
+        print(SpmResourcesUtil__C02.getProcessInfo())
     }
     
     func testReadSqlResource() {
-        guard let testResourceUrl = SpmResourcesUtil.getTestResourcesUrl() else { return }
+        guard let testResourceUrl = SpmResourcesUtil__C02.getTestResourcesUrl() else { return }
         print("• testResourceUrl==\(testResourceUrl)")
         let sqlUrl = testResourceUrl.appendingPathComponent("TablesTest.sql")
         guard let sql = try? String(contentsOf: sqlUrl) else { return }
@@ -32,7 +32,7 @@ class SynergySQLiteFrameworkTests: XCTestCase {
     let scratchDbFileName = "SQLiteFrameworkTestDB.sqlitedb"
     
     func getTestDbUrl() -> URL? {
-        guard let testScratchUrl = SpmResourcesUtil.getTestScratchUrl() 
+        guard let testScratchUrl = SpmResourcesUtil__C02.getTestScratchUrl() 
             else { return nil }
         return testScratchUrl.appendingPathComponent(scratchDbFileName)
     }
@@ -40,7 +40,7 @@ class SynergySQLiteFrameworkTests: XCTestCase {
     /// 
     func doDb01OpenCloseCheck() {
         print("••• doDb01OpenCloseCheck •••")
-        guard let scratchUrl = SpmResourcesUtil.getTestScratchUrl() 
+        guard let scratchUrl = SpmResourcesUtil__C02.getTestScratchUrl() 
             else { return }
         let testDbUrl = scratchUrl.appendingPathComponent("SQLiteFrameworkTestDB01.sqlitedb")
         print("• testDbUrl = \(testDbUrl.path)")
@@ -70,7 +70,7 @@ class SynergySQLiteFrameworkTests: XCTestCase {
     
     func doDb02TableCreate() {
         print("••• doDb02TableCreate •••")
-        guard let scratchUrl = SpmResourcesUtil.getTestScratchUrl() 
+        guard let scratchUrl = SpmResourcesUtil__C02.getTestScratchUrl() 
             else { return }
         let testDbUrl = scratchUrl.appendingPathComponent("SQLiteFrameworkTestDB02.sqlitedb")
         print("• testDbUrl = \(testDbUrl.path)")
@@ -132,13 +132,13 @@ class SynergySQLiteFrameworkTests: XCTestCase {
     
     func doDb03ImportFile() {
         print("••• doDb03ImportFile •••")
-        guard let testResourceUrl = SpmResourcesUtil.getTestResourcesUrl() else { return }
+        guard let testResourceUrl = SpmResourcesUtil__C02.getTestResourcesUrl() else { return }
         print("• testResourceUrl==\(testResourceUrl)")
         let sqlUrl = testResourceUrl.appendingPathComponent("TablesTest.sql")
         guard let sql = try? String(contentsOf: sqlUrl) else { return }
         print("• sql==\n\(sql)")
         
-        guard let scratchUrl = SpmResourcesUtil.getTestScratchUrl() 
+        guard let scratchUrl = SpmResourcesUtil__C02.getTestScratchUrl() 
             else { return }
         let testDbUrl = scratchUrl.appendingPathComponent("SQLiteFrameworkTestDB03.sqlitedb")
         print("• testDbUrl = \(testDbUrl.path)")
@@ -184,7 +184,7 @@ class SynergySQLiteFrameworkTests: XCTestCase {
     /// * macOS CLI:
     /// * Linux:
     func testScratchDatabases() throws {
-        try SpmResourcesUtil.resetTestScratch()
+        try SpmResourcesUtil__C02.resetTestScratch()
         doDb01OpenCloseCheck()
         doDb02TableCreate()
         doDb03ImportFile()

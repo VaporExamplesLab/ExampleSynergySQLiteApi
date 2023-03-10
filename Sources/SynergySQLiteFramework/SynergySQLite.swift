@@ -28,7 +28,7 @@ public struct SynergySQLite {
     }
 
     public static func getProcessInfo() -> [String:String] {        
-        return SpmResourcesUtil.getProcessInfo()
+        return SpmResourcesUtil__C02.getProcessInfo()
     }
     
     public static func getSqliteInfo() -> [String:String] {

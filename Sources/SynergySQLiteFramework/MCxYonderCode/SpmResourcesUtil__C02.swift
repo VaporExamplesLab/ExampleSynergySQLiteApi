@@ -1,13 +1,13 @@
 //
-//  SpmResourcesUtil.swift
+//  SpmResourcesUtil__C02.swift
 //  SynergySQLiteC
 //
-//  Created by marc on 2019.03.26.
+//  SpmResourcesUtil__C02 is a standalone copy of SpmResourcesUtil
 //
 
 import Foundation
 
-public class SpmResourcesUtil {
+public class SpmResourcesUtil__C02 {
     
     ////////////////
     // MARK: - Linux
